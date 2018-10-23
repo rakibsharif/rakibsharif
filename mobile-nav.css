@@ -1,0 +1,119 @@
+.mobilemenu, html {
+	background: white;
+	overflow: auto;
+}
+.mobileNavBorder {
+    border-bottom: 2px solid lightsteelblue;
+    padding-bottom: 40px !important;
+}
+.mobilemenu {
+	display: none;
+}
+.mobileNav ul {
+    list-style: none;
+    margin: 0;
+	padding: 0;
+}
+.mobileNav .mobilenav-item{
+	padding: 10px 0;
+}
+
+.mobileNav ul li a {
+	text-decoration: none;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+	margin-left: 20px;
+}
+.mobilenav-item.mobilenav-item--border.last a {
+    border: 1px solid lightcoral;
+    display: inline-block;
+    padding: 8px;
+    margin-top: 8px;
+    width: auto;
+}
+.mobileNav ul li > ul li {
+    padding: 4px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.mobileNav ul li > ul {
+	background: #f3f3f3;
+	display: none;
+	width: 100%;
+}
+.mobileNav ul li > ul a {
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0;
+}
+.mobileNav .mobilenav-item >  a:hover{
+	color: lightblue;
+}
+.mobileNav .mobilenav-item > ul li a:hover{
+	color: lightcoral;
+}
+.mobileNavBorder  {
+	height: 150px;
+    position: relative;
+}
+.mobileNavBorder  img, .row-fixed img {
+    width: 24%;
+    float: left;
+    position: absolute;
+    left: 33px;
+	top: 40px;
+}
+.bar {
+    color: #000;
+    font-size: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 33px;
+	top: 30px;
+}
+@media (min-width: 1200px){
+	.mobilemenu {
+		display: none !important;
+	}
+	.main-page {
+		display: block !important;
+	}
+}
+@media (max-width: 800px) {
+	.mobileNavBorder  img, .row-fixed img {
+		width: 35%;
+	}
+}
+@media (max-width: 700px) {
+	.mobileNavBorder  img, .row-fixed img {
+		width: 35%;
+	}
+}
+@media (max-width: 600px) {
+	.mobileNavBorder  img, .row-fixed img {
+		width: 40%;
+	}
+}
+@media (max-width: 500px) {
+	.mobileNavBorder  img, .row-fixed img {
+		width: 45%;
+	}
+}
+@media (max-width: 400px) {
+	.mobileNavBorder  img, .row-fixed img {
+		width: 50%;
+	}
+@media (max-width: 300px) {
+	.mobileNavBorder  img, .row-fixed img {
+		width: 60%;
+	}
+}
+
+
+
